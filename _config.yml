@@ -40,7 +40,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -312,7 +312,7 @@ scholar:
   last_name: [Staring]
   first_name: [Marius, M.]
 
-  style: modern-language-association # apa
+  style: apa # modern-language-association # apa
   locale: en
 
   source: /_bibliography/
@@ -381,7 +381,7 @@ enable_publication_thumbnails: true
 external_links:
   enabled: true
   rel: external nofollow noopener
-  target: _blank
+  target: #_blank
   exclude:
 
 # -----------------------------------------------------------------------------
