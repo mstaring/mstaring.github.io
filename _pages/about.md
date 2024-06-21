@@ -6,7 +6,7 @@ subtitle: <a href='#'>Affiliations</a>.  Leiden University Medical Center, Depar
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic_color.png
   image_circular: true # crops the image to make it circular
   more_info: 
 
