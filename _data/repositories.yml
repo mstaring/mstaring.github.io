@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - mstaring
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - SuperElastix/elastix
+  - InsightSoftwareConsortium/ITKElastix
+  - SuperElastix/elastix-napari
