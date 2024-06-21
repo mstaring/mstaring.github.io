@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>.  Leiden University Medical Center, Leiden, The Netherlands
+subtitle: <a href='#'>Affiliations</a>.  Leiden University Medical Center, Department of Radiology, Leiden, The Netherlands
 
 profile:
   align: right
