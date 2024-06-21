@@ -228,7 +228,7 @@
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button"><img src="{{ 'github-mark.svg' | prepend: '/assets/img/' | relative_url }}" height="60"></a>
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0 border-0" role="button"><img src="{{ 'github-mark.svg' | prepend: '/assets/img/' | relative_url }}" height="20"></a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
