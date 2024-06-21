@@ -323,7 +323,7 @@ scholar:
   # See https://github.com/alshedivat/al-folio/issues/357.
   bibtex_filters: [latex, smallcaps, superscript]
 
-  replace_strings: true
+  replace_strings: false # true
   join_strings: true
 
   details_dir: bibliography
