@@ -47,9 +47,9 @@
   <!-- Entry bib key -->
   <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <span class="title">{{ entry.title }}</span>
     <!-- Author -->
-    <div class="author">
+    <span class="author">
       {% assign author_array_size = entry.author_array | size %}
 
       {% assign author_array_limit = author_array_size %}
@@ -143,7 +143,7 @@
         >
         </i>
       {% endif %}
-    </div>
+    </span>
 
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
