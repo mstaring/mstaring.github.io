@@ -209,7 +209,6 @@
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0 border-0" role="button"><img src="{{ 'PDF_32.png' | prepend: '/assets/img/' | relative_url }}" height="20"></a>
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}"><img src="{{ 'PDF_32.png' | prepend: '/assets/img/' | relative_url }}" height="20"></a>
         {% endif %}
       {% endif %}
@@ -229,7 +228,7 @@
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0 border-0" role="button"><img src="{{ 'github-mark.svg' | prepend: '/assets/img/' | relative_url }}" height="20"></a>
+        <a href="{{ entry.code }}"><img src="{{ 'github-mark.svg' | prepend: '/assets/img/' | relative_url }}" height="20"></a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
