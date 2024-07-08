@@ -12,6 +12,7 @@ My Google Scholar profile can be found [here](http://scholar.google.nl/citations
 <!-- _pages/publications.md -->
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --file papers %}
+{% bibliography --file papers_conf %}
 
 </div>
