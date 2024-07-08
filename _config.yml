@@ -323,7 +323,7 @@ scholar:
   # See https://github.com/alshedivat/al-folio/issues/357.
   bibtex_filters: [latex, smallcaps, superscript]
 
-  replace_strings: false # true
+  replace_strings: false
   join_strings: true
 
   details_dir: bibliography
@@ -380,8 +380,8 @@ enable_publication_thumbnails: false
 # These are the defaults
 external_links:
   enabled: false
-  rel: nofollow noopener # external nofollow noopener
-  target: #_blank
+  rel: nofollow noopener
+  target:
   exclude:
 
 # -----------------------------------------------------------------------------
