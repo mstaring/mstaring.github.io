@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New funding for elastix
-date: 2015-11-07 16:11:00-0400
+date: 2024-06-27
 inline: true
 related_posts: false
 ---
