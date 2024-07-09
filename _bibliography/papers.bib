@@ -16,7 +16,7 @@
   pdf =     {2024_j_PHIRO.pdf},
   html =    {https://doi.org/10.1016/j.phro.2024.100572},
   code =    {https://github.com/prerakmody/dose-eval-via-existing-plan-parameters},
-  abstract={<b>Background and Purpose:</b> Retrospective dose evaluation for organ-at-risk auto-contours has previously used small cohorts due to additional manual effort required for treatment planning on auto-contours. We aimed to do this at large scale, by a) proposing and assessing an automated plan optimization workflow that used existing clinical plan parameters and b) using it for head-and-neck auto-contour dose evaluation.<br><b>Materials and Methods:</b> Our automated workflow emulated our clinic's treatment planning protocol and reused existing clinical plan optimization parameters. This workflow recreated the original clinical plan (POG) with manual contours (PMC) and evaluated the dose effect (POG - PMC) on 70 photon and 30 proton plans of head-and-neck patients. As a use-case, the same workflow (and parameters) created a plan using auto-contours (PAC) of eight head-and-neck organs-at-risk from a commercial tool and evaluated their dose effect (PMC - PAC).<br><b>Results:</b> For plan recreation (POG - PMC), our workflow had a median impact of 1.0% and 1.5% across dose metrics of auto-contours, for photon and proton respectively. Computer time of automated planning was 25% (photon) and 42% (proton) of manual planning time. For auto-contour evaluation (PMC - PAC), we noticed an impact of 2.0% and 2.6% for photon and proton radiotherapy. All evaluations had a median ΔNTCP (Normal Tissue Complication Probability) less than 0.3%.<br><b>Conclusions:</b> The plan replication capability of our automated program provides a blueprint for other clinics to perform auto-contour dose evaluation with large patient cohorts. Finally, despite geometric differences, auto-contours had a minimal median dose impact, hence inspiring confidence in their utility and facilitating their clinical adoption.}
+  abstract = {<b>Background and Purpose:</b> Retrospective dose evaluation for organ-at-risk auto-contours has previously used small cohorts due to additional manual effort required for treatment planning on auto-contours. We aimed to do this at large scale, by a) proposing and assessing an automated plan optimization workflow that used existing clinical plan parameters and b) using it for head-and-neck auto-contour dose evaluation.|<b>Materials and Methods:</b> Our automated workflow emulated our clinic's treatment planning protocol and reused existing clinical plan optimization parameters. This workflow recreated the original clinical plan (P<sub>OG</sub>) with manual contours (P<sub>MC</sub>) and evaluated the dose effect (P<sub>OG</sub> - P<sub>MC</sub>) on 70 photon and 30 proton plans of head-and-neck patients. As a use-case, the same workflow (and parameters) created a plan using auto-contours (P<sub>AC</sub>) of eight head-and-neck organs-at-risk from a commercial tool and evaluated their dose effect (P<sub>MC</sub> - P<sub>AC</sub>).|<b>Results:</b> For plan recreation (P<sub>OG</sub> - P<sub>MC</sub>), our workflow had a median impact of 1.0% and 1.5% across dose metrics of auto-contours, for photon and proton respectively. Computer time of automated planning was 25% (photon) and 42% (proton) of manual planning time. For auto-contour evaluation (P<sub>MC</sub> - P<sub>AC</sub>), we noticed an impact of 2.0% and 2.6% for photon and proton radiotherapy. All evaluations had a median &Delta;NTCP (Normal Tissue Complication Probability) less than 0.3%.|<b>Conclusions:</b> The plan replication capability of our automated program provides a blueprint for other clinics to perform auto-contour dose evaluation with large patient cohorts. Finally, despite geometric differences, auto-contours had a minimal median dose impact, hence inspiring confidence in their utility and facilitating their clinical adoption.}
 }
 
 @article{Stoel:2024,
@@ -31,7 +31,7 @@
   year =    {2024},
   pdf =     {2024_j_NRR.pdf},
   html =    {https://doi.org/10.1038/s41584-023-01074-5},
-  abstract={Artificial intelligence techniques, specifically deep learning, have already affected daily life in a wide range of areas. Likewise, initial applications have been explored in rheumatology. Deep learning might not easily surpass the accuracy of classic techniques when performing classification or regression on low-dimensional numerical data. With images as input, however, deep learning has become so successful that it has already outperformed the majority of conventional image-processing techniques developed during the past 50 years. As with any new imaging technology, rheumatologists and radiologists need to consider adapting their arsenal of diagnostic, prognostic and monitoring tools, and even their clinical role and collaborations. This adaptation requires a basic understanding of the technical background of deep learning, to efficiently utilize its benefits but also to recognize its drawbacks and pitfalls, as blindly relying on deep learning might be at odds with its capabilities. To facilitate such an understanding, it is necessary to provide an overview of deep-learning techniques for automatic image analysis in detecting, quantifying, predicting and monitoring rheumatic diseases, and of currently published deep-learning applications in radiological imaging for rheumatology, with critical assessment of possible limitations, errors and confounders, and conceivable consequences for rheumatologists and radiologists in clinical practice.}
+  abstract = {Artificial intelligence techniques, specifically deep learning, have already affected daily life in a wide range of areas. Likewise, initial applications have been explored in rheumatology. Deep learning might not easily surpass the accuracy of classic techniques when performing classification or regression on low-dimensional numerical data. With images as input, however, deep learning has become so successful that it has already outperformed the majority of conventional image-processing techniques developed during the past 50 years. As with any new imaging technology, rheumatologists and radiologists need to consider adapting their arsenal of diagnostic, prognostic and monitoring tools, and even their clinical role and collaborations. This adaptation requires a basic understanding of the technical background of deep learning, to efficiently utilize its benefits but also to recognize its drawbacks and pitfalls, as blindly relying on deep learning might be at odds with its capabilities. To facilitate such an understanding, it is necessary to provide an overview of deep-learning techniques for automatic image analysis in detecting, quantifying, predicting and monitoring rheumatic diseases, and of currently published deep-learning applications in radiological imaging for rheumatology, with critical assessment of possible limitations, errors and confounders, and conceivable consequences for rheumatologists and radiologists in clinical practice.}
 }
 
 @article{Chen:2024,
@@ -317,6 +317,117 @@ year 	= {2020},
   arxiv =    {},
   code =     {},
   abstract = {Imaging pulmonary fissures by CT provides useful information on diagnosis of pulmonary diseases. Automatic segmentation of fissures is a challenging task due to the variable appearance of fissures, such as inhomogeneous intensities, pathological deformation and imaging noise. To overcome these challenges, we propose an anisotropic differential operator called directional derivative of plate (DDoP) filter to probe the presence of fissure objects in 3D space by modeling the profile of a fissure patch with three parallel plates. To reduce the huge computation burden of dense matching with rotated DDoP kernels, a family of spherical harmonics are particularly utilized for acceleration. Additionally, a two-stage post-processing scheme is introduced to segment fissures. The performance of our method was verified in experiments using 55 scans from the publicly available LOLA11 dataset and 50 low-dose CT scans of lung cancer patients from the VIA-ELCAP database. Our method showed superior performance compared to the derivative of sticks (DoS) method and the Hessian-based method in terms of median and mean F1-score. The median F1-score for DDoP, DoS-based and Hessian-based methods on the LOLA11 dataset was 0.899, 0.848 and 0.843, respectively, and the mean F1-score was 0.858 &pm; 0.103, 0.781 &pm; 0.165 and 0.747 &pm; 0.239, respectively.},
+}
+
+@article{Yousefi:2019,
+  abbr =     {},
+  bibtex_show = {true},
+  author 	= {Yousefi, Sahar and Manzuri Shalmani, M. T. and Lin, Jeremy and Staring, Marius},
+title 	= {A Novel Motion Detection Method Using 3D Discrete Wavelet Transform},
+journal 	= {IEEE Transactions on Circuits and Systems for Video Technology},
+volume 	= {29},
+number 	= {12},
+pages 	= {3487 - 3500},
+month 	= {December},
+year 	= {2019},
+  pdf =      {2019_j_CSVT.pdf},
+  html =     {https://doi.org/10.1109/TCSVT.2018.2885211},
+  arxiv =    {},
+  code =     {},
+  abstract = {The problem of motion detection has received considerable attention due to the explosive growth of its applications in video analysis and surveillance systems. While the previous approaches can produce good results, the accurate detection of motion remains a challenging task due to the difficulties raised by illumination variations, occlusion, camouflage, sudden motions appearing in burst, dynamic texture, and environmental changes such as those on weather conditions, sunlight changes during a day, etc. In this study, a novel per-pixel motion descriptor is proposed for motion detection in video sequences which outperforms the current methods in the literature particularly in severe scenarios. The proposed descriptor is based on two complementary three-dimensional discrete wavelet transforms (3D-DWT) and a three-dimensional wavelet leader. In this approach, a feature vector is extracted for each pixel by applying a novel three-dimensional wavelet-based motion descriptor. Then, the extracted features are clustered by the well-known K-means algorithm. The experimental results demonstrate the effectiveness of the proposed method compared to state-of-the-art approaches in several public benchmark datasets. The application of the proposed method and additional experimental results for several challenging datasets are available online.},
+}
+
+@article{vandenEnde:2019,
+  abbr =     {},
+  bibtex_show = {true},
+  author 	= {van den Ende, R.P.J. and Kerkhof, E.M. and Rigter, L.S. and van Leerdam, M.E. and Peters, F.P. and van Triest, B. and Staring, M. and Marijnen, C.A.M. and van der Heide, U.A.},
+title 	= {Feasibility of gold fiducial markers as a surrogate for GTV position in image-guided radiotherapy of rectal cancer},
+journal 	= {International Journal of Radiation Oncology, Biology, Physics},
+volume 	= {105},
+number 	= {5},
+pages 	= {1151 - 1159},
+month 	= {December},
+year 	= {2019},
+  pdf =      {2019_j_IJROBP.pdf},
+  html =     {https://doi.org/10.1016/j.ijrobp.2019.08.052},
+  arxiv =    {},
+  code =     {},
+  abstract = {<b>Purpose:</b> To evaluate the feasibility of fiducial markers as a surrogate for GTV position in image-guided radiotherapy of rectal cancer.|<b>Methods and Materials:</b> We analyzed 35 fiducials in 19 rectal cancer patients who received short course radiotherapy or long-course chemoradiotherapy. A MRI exam was acquired before and after the first week of radiotherapy and daily pre- and post-irradiation CBCT scans were acquired in the first week of radiotherapy. Between the two MRI exams, the fiducial displacement relative to the center of gravity of the GTV (COGGTV) and the COGGTV displacement relative to bony anatomy was determined. Using the CBCT scans, inter- and intrafraction fiducial displacement relative to bony anatomy was determined.|<b>Results:</b> The systematic error of the fiducial displacement relative to the COG<sub>GTV</sub> was 2.8, 2.4 and 4.2 mm in the left-right (LR), anterior-posterior (AP) and craniocaudal (CC) direction. Large interfraction systematic errors of up to 8.0 and random errors up to 4.7 mm were found for COG<sub>GTV</sub> and fiducial displacements relative to bony anatomy, mostly in the AP and CC directions. For tumors located in the mid- and upper rectum these errors were up to 9.4 (systematic) and 5.6 mm (random) compared to 4.9 and 2.9 mm for tumors in the lower rectum. Systematic and random errors of the intrafraction fiducial displacement relative to bony anatomy were &le; 2.1 mm in all directions.|<b>Conclusions:</b> Large interfraction errors of the COG<sub>GTV</sub> and the fiducials relative to bony anatomy were found. Therefore, despite the observed fiducial displacement relative to the COG<sub>GTV</sub>, the use of fiducials as a surrogate for GTV position reduces the required margins in the AP and CC direction for a GTV boost using image-guided radiotherapy of rectal cancer. This reduction may be larger in patients with tumors located in the mid- and upper rectum compared to the lower rectum.},
+}
+
+@article{Qiao:2019,
+  abbr =     {},
+  bibtex_show = {true},
+  author 	= {Qiao, Yuchuan and Jagt, Thyrza and Hoogeman, Mischa and Lelieveldt, Boudewijn P.F. and Staring, Marius},
+title 	= {Evaluation of an open source registration package for automatic contour propagation in online adaptive intensity-modulated proton therapy of prostate cancer},
+journal 	= {Frontiers in Oncology},
+volume 	= {9},
+pages 	= {1297},
+month 	= {November},
+year 	= {2019},
+  pdf =      {2019_j_FiO.pdf},
+  html =     {https://doi.org/10.3389/fonc.2019.01297},
+  arxiv =    {},
+  code =     {https://github.com/SuperElastix/elastix},
+  abstract = {<b>Objective:</b> Our goal was to investigate the performance of an open source deformable image registration package, elastix, for fast and robust contour propagation in the context of online adaptive intensity-modulated proton therapy (IMPT) for prostate cancer.|<b>Methods:</b> A planning and 7-10 repeat CT scans were available of 18 prostate cancer patients. Automatic contour propagation of repeat CT scans was performed using elastix and compared with manual delineations in terms of geometric accuracy and runtime. Dosimetric accuracy was quantified by generating IMPT plans using the propagated contours expanded with a 2 mm (prostate) and 3.5 mm margin (seminal vesicles and lymph nodes) and calculating dosimetric coverage based on the manual delineation. A coverage of V95% &geq; 98% (at least 98% of the target volumes receive at least 95% of the prescribed dose) was considered clinically acceptable.|<b>Results:</b> Contour propagation runtime varied between 3 and 30 seconds for different registration settings. For the fastest setting, 83 in 93 (89.2%), 73 in 93 (78.5%), and 91 in 93 (97.9%) registrations yielded clinically acceptable dosimetric coverage of the prostate, seminal vesicles, and lymph nodes, respectively. For the prostate, seminal vesicles, and lymph nodes the Dice Similarity Coefficient (DSC) was 0:87 &plusmn; 0:05, 0:63 &plusmn; 0:18 and 0:89 &plusmn; 0:03 and the mean surface distance (MSD) was 1:4 &plusmn; 0:5 mm, 2:0 &plusmn; 1:2 mm and 1:5 &plusmn; 0:4 mm, respectively.|<b>Conclusion:</b> With a dosimetric success rate of 78.5% to 97.9%, this software may facilitate online adaptive IMPT of prostate cancer using a fast, free and open implementation.},
+}
+
+@article{Zhai:2019,
+  abbr =     {},
+  bibtex_show = {true},
+  author 	= {Zhai, Zhiwei and Staring, Marius and Ninaber, Maarten K. and de Vries-Bouwstra, Jeska and Schouffoer, Anne A. and Kroft, Lucia J. and Stolk, Jan and Stoel, Berend C.},
+title 	= {Pulmonary Vascular Morphology Associated with Gas Exchange in Systemic Sclerosis without Lung Fibrosis},
+journal 	= {Journal of Thoracic Imaging},
+volume 	= {34},
+number 	= {6},
+pages 	= {373 - 379},
+month 	= {November},
+year 	= {2019},
+  pdf =      {2019_j_JTI.pdf},
+  html =     {http://dx.doi.org/10.1097/RTI.0000000000000395},
+  arxiv =    {},
+  code =     {},
+  abstract = {<b>Purpose:</b> Gas exchange in systemic sclerosis (SSc) is known to be affected by fibrotic changes in the pulmonary parenchyma. However, SSc patients without detectable fibrosis can still have impaired gas transfer. We aim to investigate whether pulmonary vascular changes could partly explain a reduction in gas transfer of systemic sclerosis (SSc) patients without fibrosis.|<b>Materials and Methods:</b> We selected 77 patients, whose visual CT scoring showed no fibrosis. Pulmonary vessels were detected automatically in CT images and their local radii were calculated. The frequency of occurrence for each radius was calculated, and from this radius histogram two imaging biomarkers (&alpha; and &beta;) were extracted, where &alpha; reflects the relative contribution of small vessels compared to large vessels and &beta; represents the vessel tree capacity. Correlations between imaging biomarkers and gas transfer (DLCOc %predicted) were evaluated with Spearman's correlation. Multivariable stepwise linear regression was performed with DLCOc %predicted as dependent variable and age, BMI, sPAP, FEV1 %predicted, TLC %predicted, FVC %predicted, &alpha;, &beta;, voxel size and CT-derived lung volume as independent variables.|<b>Results:</b> Both &alpha; and &beta; were significantly correlated with gas transfer (R=-0.29, p-value=0.011 and R=0.32, p-value=0.004, respectively). The multivariable step-wise linear regression analysis selected sPAP (coefficient=-0.78, 95%CI=[-1.07, -0.49], p-value<0.001), &beta; (coefficient=8.6, 95%CI=[4.07, 13.1], p-value<0.001) and FEV1 %predicted (coefficient=0.3, 95%CI=[0.12, 0.48], p-value=0.001) as significant independent predictors of DLCOc %predicted (R=0.71, p-value<0.001).|<b>Conclusions:</b>In SSc patients without detectable pulmonary fibrosis, pulmonary vascular morphology is associated with gas transfer, indicating that impaired gas exchange is associated with vascular changes.},
+}
+
+@article{XXXX,
+  abbr =     {},
+  bibtex_show = {true},
+  pdf =      {},
+  html =     {},
+  arxiv =    {},
+  code =     {},
+  abstract = {},
+}
+
+@article{XXXX,
+  abbr =     {},
+  bibtex_show = {true},
+  pdf =      {},
+  html =     {},
+  arxiv =    {},
+  code =     {},
+  abstract = {},
+}
+
+@article{XXXX,
+  abbr =     {},
+  bibtex_show = {true},
+  pdf =      {},
+  html =     {},
+  arxiv =    {},
+  code =     {},
+  abstract = {},
+}
+
+@article{XXXX,
+  abbr =     {},
+  bibtex_show = {true},
+  pdf =      {},
+  html =     {},
+  arxiv =    {},
+  code =     {},
+  abstract = {},
 }
 
 @article{XXXX,
