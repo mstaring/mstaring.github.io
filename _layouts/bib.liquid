@@ -184,16 +184,13 @@
 
     <!-- Links/Buttons -->
     <div class="links">
-      {% if entry.award %}
+      {% if entry.award and entry.award != "" and entry.award != nil %}
         <a class="award btn btn-sm z-depth-0" role="button">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awareded{% endif -%}
         </a>
       {% endif %}
-      {% if entry.abstract %}
+      {% if entry.abstract and entry.abstract != "" and entry.abstract != nil %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      {% endif %}
-      {% if entry.arxiv and entry.arxiv == "" %}
-        hello
       {% endif %}
       {% if entry.arxiv and entry.arxiv != "" and entry.arxiv != nil %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
@@ -201,21 +198,21 @@
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
-      {% if entry.html %}
+      {% if entry.html and entry.html != "" and entry.html != nil %}
         {% if entry.html contains '://' %}
           <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
         {% else %}
           <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
         {% endif %}
       {% endif %}
-      {% if entry.pdf %}
+      {% if entry.pdf and entry.pdf != "" and entry.pdf != nil %}
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
         {% else %}
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}"><img src="{{ 'PDF_32.png' | prepend: '/assets/img/' | relative_url }}" height="20"></a>
         {% endif %}
       {% endif %}
-      {% if entry.supp %}
+      {% if entry.supp and entry.supp != "" and entry.supp != nil %}
         {% if entry.supp contains '://' %}
           <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
         {% else %}
@@ -230,7 +227,7 @@
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
       {% endif %}
-      {% if entry.code %}
+      {% if entry.code and entry.code != "" and entry.code != nil %}
         <a href="{{ entry.code }}"><img src="{{ 'github-mark.svg' | prepend: '/assets/img/' | relative_url }}" height="20"></a>
       {% endif %}
       {% if entry.poster %}
