@@ -14,5 +14,6 @@ My Google Scholar profile can be found [here](http://scholar.google.nl/citations
 
 {% bibliography --file papers %}
 {% bibliography --file papers_conf %}
+{% bibliography --file papers_abstacts %}
 
 </div>
