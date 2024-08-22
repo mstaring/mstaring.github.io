@@ -18,13 +18,15 @@ My Google Scholar profile can be found [here](http://scholar.google.nl/citations
 <!-- _pages/publications.md -->
 <div class="publications">
 
-<h2><a id="journals"></a>Papers in international journals</h2>
+<h2 color=global-text-color><div id="journals"></div>Papers in international journals</h2>
 {% bibliography --file papers %}
-<h2><a id="proc"></a>Papers in conference proceedings</h2>
+<h2><div id="proc"></div>Papers in conference proceedings</h2>
 {% bibliography --file papers_conf %}
-<h2><a id="abs"></a>Abstracts</h2>
+<h2><div id="abs"></div>Abstracts</h2>
 {% bibliography --file papers_abstracts %}
-<h2><a id="theses"></a>Theses</h2>
+<h2><div id="book"></div>Book chapters</h2>
+{% bibliography --file books %}
+<h2><div id="theses"></div>Theses</h2>
 {% bibliography --file theses %}
 
 </div>
