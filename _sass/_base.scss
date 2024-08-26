@@ -712,7 +712,7 @@ footer.sticky-bottom {
       }
 
       .author {
-        font-size: 0.7rem; // author font size, is new entry
+        font-size: 0.2rem; // author font size, is new entry
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
@@ -725,6 +725,7 @@ footer.sticky-bottom {
         > em {
           border-bottom: 1px solid;
           font-style: normal;
+          font-size: 0.2rem // journal name, is new entry
         }
 
         > span.more-authors {
