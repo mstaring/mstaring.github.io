@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Marius
-middle_name: 
+middle_name:
 last_name: Staring
 email: m.staring@lumc.nl
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -92,7 +92,7 @@ osf_id: # your OSF ID
 pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
-research_gate_profile: Marius-Staring-47869146 # your profile on ResearchGate
+research_gate_profile: Marius-Staring # your profile on ResearchGate
 scholar_userid: pKFkfq4AAAAJ # your Google Scholar ID
 scopus_id: 55886447500 # your profile on Scopus
 semanticscholar_id: 2602873 # your Semantic Scholar ID
@@ -109,7 +109,7 @@ x_username: # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
-contact_note: 
+contact_note:
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
