@@ -679,7 +679,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 0.1rem;
+      margin-bottom: 0.1rem; // space below each paper, was 1rem
 
       .preview {
       }
@@ -712,6 +712,7 @@ footer.sticky-bottom {
       }
 
       .author {
+        font-size: 0.7rem; // author font size, is new entry
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
