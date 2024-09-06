@@ -9,12 +9,13 @@
   title =   {Improving Uncertainty-Error Correspondence in Deep Bayesian Medical Image Segmentation},
   author =  {Mody, Prerak and Chaves-de-Plaza, Nicolas and Rao, Chinmay and Astreinidou, Eleftheria and De Ridder, Mischa, and Hoekstra, Nienke and Hildebrandt, Klaus and Staring, Marius},
   journal = {The Journal of Machine Learning for Biomedical Imaging},
-  volume =  {},
-  pages =   {},
-  month =   {},
+  volume =  {2},
+  pages =   {1048 -- 1082},
+  month =   {August},
   year =    {2024},
   pdf =     {2024_j_MELBAb.pdf},
-  html =    {},
+  html =    {https://doi.org/10.59275/j.melba.2024-5gc8},
+  arxiv =   {},
   code =    {https://github.com/prerakmody/bayesuncertainty-error-correspondence},
   abstract = {Increased usage of automated tools like deep learning in medical image segmentation has alleviated the bottleneck of manual contouring. This has shifted manual labour to quality assessment (QA) of automated contours which involves detecting errors and correcting them. A potential solution to semi-automated QA is to use deep Bayesian uncertainty to recommend potentially erroneous regions, thus reducing time spent on error detection. Previous work has investigated the correspondence between uncertainty and error, however, no work has been done on improving the ``utility" of Bayesian uncertainty maps such that it is only present in inaccurate regions and not in the accurate ones. Our work trains the FlipOut model with the Accuracy-vs-Uncertainty (AvU) loss which promotes uncertainty to be present only in inaccurate regions. We apply this method on datasets of two radiotherapy body sites, c.f. head-and-neck CT and prostate MR scans. Uncertainty heatmaps (i.e. predictive entropy) are evaluated against voxel inaccuracies using Receiver Operating Characteristic (ROC) and Precision-Recall (PR) curves. Numerical results show that when compared to the Bayesian baseline the proposed method successfully suppresses uncertainty for accurate voxels, with similar presence of uncertainty for inaccurate voxels. Code to reproduce experiments is available at <a href="https://github.com/prerakmody/bayesuncertainty-error-correspondence">https://github.com/prerakmody/bayesuncertainty-error-correspondence</a>.}
 }
