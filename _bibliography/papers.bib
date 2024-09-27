@@ -3,6 +3,23 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{Jia2024,
+  abbr =     {},
+  bibtex_show = {true},
+  title =   {Using 3D point cloud and graph-based neural networks to improve the estimation of pulmonary function tests from chest CT},
+  author =  {Jia, Jingnan and Yu, Bo and Mody, Prerak and Ninaber, Maarten K. and Schouffoer, Anne A. and Kroft, Lucia J.M. and Staring, Marius and Stoel, Berend C.},
+  journal = {Computers in Biology and Medicine},
+  volume =  {182},
+  pages =   {109192},
+  month =   {November},
+  year =    {2024},
+  pdf =     {2024_j_CMB.pdf},
+  html =    {https://doi.org/10.1016/j.compbiomed.2024.109192},
+  arxiv =   {},
+  code =    {https://github.com/Jingnan-Jia/PFT_regression},
+  abstract = {Pulmonary function tests (PFTs) are important clinical metrics to measure the severity of interstitial lung disease for systemic sclerosis patients. However, PFTs cannot always be performed by spirometry if there is a risk of disease transmission or other contraindications. In addition, it is unclear how lung function is affected by changes in lung vessels. Convolution neural networks (CNNs) have been previously proposed to estimate PFTs from chest CT scans (CNN-CT) and extracted vessels (CNNVessel). Due to GPU memory constraints, however, these networks used down-sampled images, which causes a loss of information on small vessels. Previous work based on CNNs has indicated that detailed vessel information from CT scans can be helpful for PFT estimation. Therefore, this paper proposes to use a point cloud neural network (PNN-Vessel) and graph neural network (GNN-Vessel) to estimate PFTs from point cloud and graph-based representations of pulmonary vessel centerlines, respectively. After that, we perform multiple variable step-wise regression analysis to explore if vessel-based networks can contribute to the PFT estimation, in addition to CNN-CT. Results showed that both PNN-Vessel and GNN-Vessel outperformed CNN-Vessel, by 14% and 4%, respectively, when averaged across the ICC scores of four PFTs metrics. In addition, compared to CNN-Vessel, PNNVessel used 30% of training time (1.1 hours) and 7% parameters (2.1 M) and GNN-Vessel used only 7% training time (0.25 hours) and 0.7% parameters (0.2 M). Our multiple variable regression analysis still verified that more detailed vessel information could provide further explanation for PFT estimation from anatomical imaging.},
+}
+
 @article{Mody:2024b,
   abbr = {},
   bibtex_show = {true},
