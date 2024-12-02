@@ -24,9 +24,9 @@ My Google Scholar profile can be found [here](http://scholar.google.nl/citations
 {% bibliography --file papers_conf %}
 <div id="abs"></div>
 {% bibliography --file papers_abstracts %}
-<div id="book"></div> -->
+<div id="book"></div>
 {% bibliography --file books %}
 <div id="theses"></div>
 {% bibliography --file theses %}
-
+-->
 </div>
