@@ -3,73 +3,6 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{Malimban2024,
-  abbr =     {},
-  bibtex_show = {true},
-  title =   {A simulation framework for preclinical proton irradiation workflow},
-  author =  {Malimban, Justin and Ludwig, Felix and Lathouwers, Danny and Staring, Marius and Verhaegen, Frank and Brandenburg, Sytze},
-  journal = {Physics in Medicine and Biology},
-  volume =  {69},
-  pages =   {215040},
-  month =   {},
-  year =    {2024},
-  pdf =     {2024_j_PMB.pdf},
-  html =    {https://doi.org/10.1088/1361-6560/ad897f},
-  arxiv =   {},
-  code =    {},
-  abstract = {<b>Objective:</b> The integration of proton beamlines with X-ray imaging/irradiation platforms has opened up possibilities for image-guided Bragg peak irradiations in small animals. Such irradiations allow selective targeting of normal tissue substructures and  tumours. However, their small size and location pose challenges in designing experiments. This work presents a simulation framework useful for optimizing beamlines, imaging protocols, and design of animal experiments. The usage of the framework is demonstrated, mainly focusing on the imaging part.<br><b>Approach:</b> The fastCAT toolkit was modified with Monte Carlo (MC)-calculated primary and scatter data of a small animal imager for the simulation of micro-CT scans. The simulated CT of a mini-calibration phantom from fastCAT was validated against a full MC TOPAS CT simulation. A realistic beam model of a preclinical proton facility was obtained from beam transport simulations to create irradiation plans in matRad. Simulated CT images of a digital mouse phantom were generated using single-energy CT (SECT) and dual-energy CT (DECT) protocols and their accuracy in proton stopping power ratio (SPR) estimation and their impact on calculated proton dose distributions in a mouse were evaluated.<br><b>Main Results:</b> The CT numbers from fastCAT agree within 11 HU with TOPAS except for materials at the centre of the phantom. Discrepancies for central inserts are caused by beam hardening issues. The root mean square deviation in the SPR for the best SECT (90kV/Cu) and DECT (50kV/Al-90kV/Al) protocols are 3.7% and 1.0%, respectively. Dose distributions calculated for SECT and DECT datasets revealed range shifts <0.1 mm, gamma pass rates (3%/0.1mm) greater than 99%, and no substantial dosimetric differences for all structures. The outcomes suggest that SECT is sufficient for proton treatment planning in animals.<br><b>Significance:</b> The framework is a useful tool for the development of an optimized experimental configuration without using animals and beam time.},
-}
-
-@article{Jia2024b,
-  abbr =    {},
-  bibtex_show = {true},
-  title =   {Explainable fully automated CT scoring of interstitial lung disease for patients suspected of systemic sclerosis by cascaded regression neural networks and its comparison with experts},
-  author =  {Jia, Jingnan and Hern{\'a}ndez Gir{\'o}n, Irene and Schouffoer, Anne A. and De Vries-Bouwstra, Jeska K. and Ninaber, Maarten K. and Korving, Julie C. and Staring, Marius and Kroft, Lucia J.M. and Stoel, Berend C.},
-  journal = {Scientific Reports},
-  volume =  {14},
-  pages =   {26666},
-  month =   {},
-  year =    {2024},
-  pdf =     {2024_j_SR.pdf},
-  html =    {https://doi.org/10.1038/s41598-024-78393-4},
-  arxiv =   {},
-  code =    {},
-  abstract = {Visual scoring of interstitial lung disease in systemic sclerosis (SSc-ILD) from CT scans is laborious, subjective and time-consuming. This study aims to develop a deep learning framework to automate SSc-ILD scoring. The automated framework is a cascade of two neural networks. The first network selects the craniocaudal positions of the five scoring levels. Subsequently, for each level, the second network estimates the ratio of three patterns to the total lung area: the total extent of disease (TOT), ground glass (GG) and reticulation (RET). To overcome the score imbalance in the second network, we propose a method to augment the training dataset with synthetic data. To explain the network's output, a heat map method is introduced to highlight the candidate interstitial lung disease regions. The explainability of heat maps was evaluated by two human experts and a quantitative method that uses the heat map to produce the score. The results show that our framework achieved a &kappa; of 0.66, 0.58, and 0.65, for the TOT, GG and RET scoring, respectively. Both experts agreed with the heat maps in 91%, 90% and 80% of cases, respectively. Therefore, it is feasible to develop a framework for automated SSc-ILD scoring, which performs competitively with human experts and provides high-quality explanations using heat maps. Confirming the model's generalizability is needed in future studies.},
-}
-
-@article{Jia2024a,
-  abbr =     {},
-  bibtex_show = {true},
-  title =   {Using 3D point cloud and graph-based neural networks to improve the estimation of pulmonary function tests from chest CT},
-  author =  {Jia, Jingnan and Yu, Bo and Mody, Prerak and Ninaber, Maarten K. and Schouffoer, Anne A. and Kroft, Lucia J.M. and Staring, Marius and Stoel, Berend C.},
-  journal = {Computers in Biology and Medicine},
-  volume =  {182},
-  pages =   {109192},
-  month =   {November},
-  year =    {2024},
-  pdf =     {2024_j_CMB.pdf},
-  html =    {https://doi.org/10.1016/j.compbiomed.2024.109192},
-  arxiv =   {},
-  code =    {https://github.com/Jingnan-Jia/PFT_regression},
-  abstract = {Pulmonary function tests (PFTs) are important clinical metrics to measure the severity of interstitial lung disease for systemic sclerosis patients. However, PFTs cannot always be performed by spirometry if there is a risk of disease transmission or other contraindications. In addition, it is unclear how lung function is affected by changes in lung vessels. Convolution neural networks (CNNs) have been previously proposed to estimate PFTs from chest CT scans (CNN-CT) and extracted vessels (CNNVessel). Due to GPU memory constraints, however, these networks used down-sampled images, which causes a loss of information on small vessels. Previous work based on CNNs has indicated that detailed vessel information from CT scans can be helpful for PFT estimation. Therefore, this paper proposes to use a point cloud neural network (PNN-Vessel) and graph neural network (GNN-Vessel) to estimate PFTs from point cloud and graph-based representations of pulmonary vessel centerlines, respectively. After that, we perform multiple variable step-wise regression analysis to explore if vessel-based networks can contribute to the PFT estimation, in addition to CNN-CT. Results showed that both PNN-Vessel and GNN-Vessel outperformed CNN-Vessel, by 14% and 4%, respectively, when averaged across the ICC scores of four PFTs metrics. In addition, compared to CNN-Vessel, PNNVessel used 30% of training time (1.1 hours) and 7% parameters (2.1 M) and GNN-Vessel used only 7% training time (0.25 hours) and 0.7% parameters (0.2 M). Our multiple variable regression analysis still verified that more detailed vessel information could provide further explanation for PFT estimation from anatomical imaging.},
-}
-
-@article{Mody:2024b,
-  abbr = {},
-  bibtex_show = {true},
-  title =   {Improving Uncertainty-Error Correspondence in Deep Bayesian Medical Image Segmentation},
-  author =  {Mody, Prerak and Chaves-de-Plaza, Nicolas and Rao, Chinmay and Astreinidou, Eleftheria and De Ridder, Mischa, and Hoekstra, Nienke and Hildebrandt, Klaus and Staring, Marius},
-  journal = {The Journal of Machine Learning for Biomedical Imaging},
-  volume =  {2},
-  pages =   {1048 -- 1082},
-  month =   {August},
-  year =    {2024},
-  pdf =     {2024_j_MELBAb.pdf},
-  html =    {https://doi.org/10.59275/j.melba.2024-5gc8},
-  arxiv =   {},
-  code =    {https://github.com/prerakmody/bayesuncertainty-error-correspondence},
-  abstract = {Increased usage of automated tools like deep learning in medical image segmentation has alleviated the bottleneck of manual contouring. This has shifted manual labour to quality assessment (QA) of automated contours which involves detecting errors and correcting them. A potential solution to semi-automated QA is to use deep Bayesian uncertainty to recommend potentially erroneous regions, thus reducing time spent on error detection. Previous work has investigated the correspondence between uncertainty and error, however, no work has been done on improving the ``utility" of Bayesian uncertainty maps such that it is only present in inaccurate regions and not in the accurate ones. Our work trains the FlipOut model with the Accuracy-vs-Uncertainty (AvU) loss which promotes uncertainty to be present only in inaccurate regions. We apply this method on datasets of two radiotherapy body sites, c.f. head-and-neck CT and prostate MR scans. Uncertainty heatmaps (i.e. predictive entropy) are evaluated against voxel inaccuracies using Receiver Operating Characteristic (ROC) and Precision-Recall (PR) curves. Numerical results show that when compared to the Bayesian baseline the proposed method successfully suppresses uncertainty for accurate voxels, with similar presence of uncertainty for inaccurate voxels. Code to reproduce experiments is available at <a href="https://github.com/prerakmody/bayesuncertainty-error-correspondence">https://github.com/prerakmody/bayesuncertainty-error-correspondence</a>.}
-}
 
 @article{Chaves-de-Plaza:2024,
   abbr = {CGF},
@@ -1229,5 +1162,4 @@
   code =     {https://github.com/SuperElastix/elastix},
   abstract = {Medical images that are to be registered for clinical application often contain both structures that deform and ones that remain rigid. Nonrigid registration algorithms that do not model properties of different tissue types may result in deformations of rigid structures. In this article a local rigidity penalty term is proposed which is included in the registration function in order to penalize the deformation of rigid objects. This term can be used for any representation of the deformation field capable of modelling locally rigid transformations. By using a B-spline representation of the deformation field, a fast algorithm can be devised. The proposed method is compared with an unconstrained nonrigid registration algorithm. It is evaluated on clinical three-dimensional CT follow-up data of the thorax and on two-dimensional DSA image sequences. The results show that nonrigid registration using the proposed rigidity penalty term is capable of nonrigidly aligning images, while keeping user-defined structures locally rigid.},
 }
-
 
