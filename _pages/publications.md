@@ -17,6 +17,8 @@ My Google Scholar profile can be found [here](http://scholar.google.nl/citations
 
 <div class="publications">
 
+<div id="journals"></div>
+{% bibliography --file papers %}
 <div id="proc"></div>
 {% bibliography --file papers_conf %}
 <div id="abs"></div>
