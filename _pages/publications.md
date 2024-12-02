@@ -15,4 +15,10 @@ My Google Scholar profile can be found [here](http://scholar.google.nl/citations
 <a href="#book">Book Chapters</a> |
 <a href="#theses">Theses</a>
 
+<div class="publications">
+
+<div id="theses"></div>
+{% bibliography --file theses %}
+
+</div>
 
