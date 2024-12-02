@@ -15,10 +15,10 @@ My Google Scholar profile can be found [here](http://scholar.google.nl/citations
 <a href="#abs">Abstracts</a> |
 <a href="#theses">Theses</a>
 
-<!-- _pages/publications.md -->
+<!-- _pages/publications.md --
 <div class="publications">
 
-<!-- <div id="journals"></div>
+<div id="journals"></div>
 {% bibliography --file papers %}
 <div id="proc"></div>
 {% bibliography --file papers_conf %}
@@ -28,5 +28,5 @@ My Google Scholar profile can be found [here](http://scholar.google.nl/citations
 {% bibliography --file books %}
 <div id="theses"></div>
 {% bibliography --file theses %}
--->
+
 </div>
