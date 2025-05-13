@@ -3,6 +3,23 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{Lyu2025,
+  abbr =     {},
+  bibtex_show = {true},
+  title =   {MCP-MedSAM: A Powerful Lightweight Medical Segment Anything Model Trained with a Single GPU in Just One Day},
+  author =  {Lyu, Donghang and Gao, Ruochen and Staring, Marius},
+  journal = {The Journal of Machine Learning for Biomedical Imaging},
+  volume =  {3},
+  pages =   {135 -- 151},
+  month =   {May},
+  year =    {2025},
+  pdf =     {2025_j_MELBA.pdf},
+  html =    {https://doi.org/10.59275/j.melba.2025-4849},
+  arxiv =   {},
+  code =    {},
+  abstract = {Medical image segmentation involves partitioning medical images into meaningful regions, with a focus on identifying anatomical structures and lesions. It has broad applications in healthcare, and deep learning methods have enabled significant advancements in automating this process. Recently, the introduction of the Segmentation Anything Model (SAM), the first foundation model for segmentation task, has prompted researchers to adapt it for the medical domain to improve performance across various tasks. However, SAM’s large model size and high GPU requirements hinder its scalability and development in the medical domain. To address these challenges, research has increasingly focused on lightweight adaptations of SAM to reduce its parameter count, enabling training with limited GPU resources while maintaining competitive segmentation performance. In this work, we propose MCP-MedSAM, a powerful and lightweight medical SAM model designed to be trainable on a single A100 GPU with 40GB of memory within one day while delivering superior segmentation performance. Recognizing the significant internal differences between modalities and the need for direct segmentation target information within bounding boxes, we introduce two kinds of prompts: the modality prompt and the content prompt. After passing through the prompt encoder, their embedding representations can further improve the segmentation performance by incorporating more relevant information without adding significant training overhead. Additionally, we adopt an effective modality-based data sampling strategy to address data imbalance between modalities, ensuring more balanced performance across all modalities. Our method was trained and evaluated using a large-scale challenge dataset, compared to top-ranking methods on the challenge leaderboard, MCP-MedSAM achieved superior performance while requiring only one day of training on a single GPU. The code is publicly available at <a href="https://github.com/dong845/MCP-MedSAM">https://github.com/dong845/MCP-MedSAM</a>.},
+}
+
 @article{Gao2025,
   abbr =     {},
   bibtex_show = {true},
