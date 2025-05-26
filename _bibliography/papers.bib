@@ -3,6 +3,23 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{Elmahdyu2025,
+  abbr =     {},
+  bibtex_show = {true},
+  title =   {CMRINet: Joint Groupwise Registration and Segmentation for Cardiac Function Quantification from Cine-MRI},
+  author =  {Elmahdy, Mohamed S. and Staring, Marius and de Koning, Patrick J. H. and Alabed, Samer and Salehi, Mahan and Alandejani, Faisal and Sharkey, Michael and Aldabbagh, Ziad and Swift, Andrew J. and van der Geest, Rob J.},
+  journal = {arXiv},
+  volume =  {},
+  pages =   {},
+  month =   {},
+  year =    {2025},
+  pdf =     {2025_j_arxiv.pdf},
+  html =    {https://arxiv.org/abs/2505.16452},
+  arxiv =   {2505.16452},
+  code =    {},
+  abstract = {Accurate and efficient quantification of cardiac function is essential for the estimation of prognosis of cardiovascular diseases (CVDs). One of the most commonly used metrics for evaluating cardiac pumping performance is left ventricular ejection fraction (LVEF). However, LVEF can be affected by factors such as inter-observer variability and varying pre-load and after-load conditions, which can reduce its reproducibility. Additionally, cardiac dysfunction may not always manifest as alterations in LVEF, such as in heart failure and cardiotoxicity diseases. An alternative measure that can provide a relatively load-independent quantitative assessment of myocardial contractility is myocardial strain and strain rate. By using LVEF in combination with myocardial strain, it is possible to obtain a thorough description of cardiac function. Automated estimation of LVEF and other volumetric measures from cine-MRI sequences can be achieved through segmentation models, while strain calculation requires the estimation of tissue displacement between sequential frames, which can be accomplished using registration models. These tasks are often performed separately, potentially limiting the assessment of cardiac function. To address this issue, in this study we propose an end-to-end deep learning (DL) model that jointly estimates groupwise (GW) registration and segmentation for cardiac cine-MRI images. The proposed anatomically-guided Deep GW network was trained and validated on a large dataset of 4-chamber view cine-MRI image series of 374 subjects. A quantitative comparison with conventional GW registration using elastix and two DL-based methods showed that the proposed model improved performance and substantially reduced computation time.},
+}
+
 @article{Lyu2025,
   abbr =     {},
   bibtex_show = {true},
@@ -26,14 +43,15 @@
   title =   {On Factors that Influence Deep Learning-Based Dose Prediction of Head and Neck Tumors},
   author =  {Gao, Ruochen and Mody, Prerak and Rao, Chinmay S. and Dankers, Frank and Staring, Marius},
   journal = {Physics in Medicine and Biology},
-  volume =  {},
-  pages =   {},
+  volume =  {70},
+  number =  {11},
+  pages =   {115006},
   month =   {},
   year =    {2025},
   pdf =     {2025_j_PMB.pdf},
   html =    {https://doi.org/10.1088/1361-6560/adcfeb},
   arxiv =   {},
-  code =    {},
+  code =    {https://github.com/RuochenGao/HaN-DosePrediction},
   abstract = {<i>Objective.</i> This study investigates key factors influencing deep learning-based dose prediction models for head and neck cancer radiation therapy (RT). The goal is to evaluate model accuracy, robustness, and computational efficiency, and to identify key components necessary for optimal performance.<br><i>Approach.</i> We systematically analyze the impact of input and dose grid resolution, input type, loss function, model architecture, and noise on model performance. Two datasets are used: a public dataset (OpenKBP) and an in-house clinical dataset (LUMC). Model performance is primarily evaluated using two metrics: dose score and dose-volume histogram (DVH) score.<br><i>Main results.</i> High-resolution inputs improve prediction accuracy (dose score and DVH score) by 8.6-13.5\% compared to low resolution. Using a combination of CT, planning target volumes (PTVs), and organs-at-risk (OARs) as input significantly enhances accuracy, with improvements of 57.4-86.8\% over using CT alone. Integrating mean absolute error (MAE) loss with value-based and criteria-based DVH loss functions further boosts DVH score by 7.2-7.5\% compared to MAE loss alone. In the robustness analysis, most models show minimal degradation under Poisson noise (0-0.3 Gy) but are more susceptible to adversarial noise (0.2-7.8 Gy). Notably, certain models, such as SwinUNETR, demonstrate superior robustness against adversarial perturbations.<br><i>Significance.</i> These findings highlight the importance of optimizing deep learning models and provide valuable guidance for achieving more accurate and reliable radiotherapy dose prediction.},
 }
 
