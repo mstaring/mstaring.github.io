@@ -3,6 +3,25 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{Zheng:2025b,
+  abbr =    {},
+  bibtex_show = {true},
+  author =    {Zheng, Yuxi and Feng, Jianhui and Li, Tianran and Staring, Marius and Qiao, Yuchuan},
+  title =     {SHMoAReg: Spark Deformable Image Registration via Spatial Heterogeneous Mixture of Experts and Attention Heads},
+  booktitle = {IEEE International Conference on Bioinformatics and Biomedicine},
+  address =   {Wuhan, China},
+  series =    {},
+  volume =    {},
+  pages =     {},
+  month =     {December},
+  year =      {2025},
+  pdf =       {},
+  html =      {},
+  arxiv =     {2509.20073},
+  code =      {},
+  abstract =  {Encoder-Decoder architectures are widely used in deep learning-based Deformable Image Registration (DIR), where the encoder extracts multi-scale features and the decoder predicts deformation fields by recovering spatial locations. However, current methods lack specialized extraction of features (that are useful for registration) and predict deformation jointly and homogeneously in all three directions. In this paper, we propose a novel expert-guided DIR network with Mixture of Experts (MoE) mechanism applied in both encoder and decoder, named SHMoAReg. Specifically, we incorporate Mixture of Attention heads (MoA) into encoder layers, while Spatial Heterogeneous Mixture of Experts (SHMoE) into the decoder layers. The MoA enhances the specialization of feature extraction by dynamically selecting the optimal combination of attention heads for each image token. Meanwhile, the SHMoE predicts deformation fields heterogeneously in three directions for each voxel using experts with varying kernel sizes. Extensive experiments conducted on two publicly available datasets show consistent improvements over various methods, with a notable increase from 60.58% to 65.58% in Dice score for the abdominal CT dataset. Furthermore, SHMoAReg enhances model interpretability by differentiating experts' utilities across/within different resolution layers. To the best of our knowledge, we are the first to introduce MoE mechanism into DIR tasks. The code will be released soon.},
+}
+
 @inproceedings{Lyu:2025b,
   abbr =    {},
   bibtex_show = {true},
