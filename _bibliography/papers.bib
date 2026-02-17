@@ -3,6 +3,23 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{Beljaards:2026,
+  abbr =     {},
+  bibtex_show = {true},
+  author =   {Beljaards, Laurens and Nagtegaal, Martijn and Rao, Chinmay and Dong, Yiming and van Osch, Matthias J.P. and Pezzotti, Nicola and Doneva, Mariya and Staring, Marius},
+  title =    {DEEP-DISORDER: Motion Correction in 3D MRI via Segment Reconstruction and Registration},
+  journal =  {NMR in Biomedicine},
+  volume =   {},
+  number =   {},
+  pages =    {},
+  year =     {2026},
+  pdf =      {2026_j_NMRbiomed.pdf},
+  html =     {},
+  arxiv =    {},
+  code =     {},
+  abstract = {3D MR image acquisition is inherently time-intensive, rendering it susceptible to patient motion during scanning. This may introduce significant blurring and artifacts, potentially necessitating re-acquisition.<br>We propose a modular framework to retrospectively correct for intra-scan motion in 3D brain MRI, without active motion tracking. Serving as the backbone of our approach is an existing distributed and incoherent sampling scheme (DISORDER), combined with a fast network trained for highly undersampled reconstruction. This enables approximate reconstructions of anatomy after every few seconds, using only a tiny fraction of k-space data (<2%). While these reconstructions are only approximate, we postulate they are sufficient to estimate motion patterns at said temporal resolution. Groupwise registration, notable for its elimination of registration bias, is utilized for estimating rigid motion parameters, which are leveraged to reconstruct the measured data with reduced motion artifacts.<br>The approach was evaluated on 94 retrospectively and 3 prospectively motion-corrupted in vivo 3D T1-weighted brain MRI acquisitions. The estimated motion parameters matched the known retrospective motion with 0.06 mm and 0.13&deg; accuracy, resulting in an improvement in reconstruction quality from 0.942&pm;0.026 to 0.992&pm;0.003 SSIM for the retrospective scans. The prospective scans improved from 0.915&pm;0.024 to 0.936&pm;0.014 SSIM after correction in the case of gradual motion and from 0.764&pm;0.008 to 0.923&pm;0.011 SSIM for extreme motion.<br>In conclusion, the proposed approach, that is free of external tracking devices or navigators, successfully estimated and corrected 3D motion between small sub-portions of a scan. This resulted in vastly improved image quality, making volumetric MRI substantially more tolerant to motion.},
+}
+
 @article{Lyu:2026,
   abbr =     {},
   bibtex_show = {true},

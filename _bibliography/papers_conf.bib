@@ -3,6 +3,26 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{Gao:2026,
+  abbr =    {},
+  bibtex_show = {true},
+  author =    {Gao, Ruochen and Staring, Marius and Dankers, Frank},
+  title =     {Clinical DVH metrics as a loss function for 3D dose prediction in head and neck radiotherapy},
+  booktitle = {Computer Assisted Radiology and Surgery},
+  address =   {Nagoya, Japan},
+  series =    {},
+  volume =    {},
+  pages =     {},
+  month =     {July},
+  year =      {2026},
+  pdf =       {2026_c_CARS.pdf},
+  html =      {},
+  arxiv =     {},
+  code =      {},
+  abstract =  {
+<b>Purpose</b> Deep-learning-based three-dimensional (3D) dose prediction has become an important component of automated radiotherapy workflows. However, most existing models are trained using voxel-wise regression losses, which are poorly aligned with clinical plan evaluation criteria that rely on dose-volume histogram (DVH)-derived metrics. This study aims to develop a clinically guided loss formulation that directly optimizes clinically used DVH metrics while remaining computationally efficient for head and neck (H&N) dose prediction.<br><b>Methods</b> We propose a clinical DVH metric loss (CDM loss) that jointly incorporates differentiable formulations of common D-metrics and differentiable surrogates of V--metrics. The loss is driven by a JSON-based clinical plan evaluation template to ensure alignment with clinic planning criteria. In addition, we introduce a lossless bit-mask encoding scheme to efficiently represent a large number of overlapping ROIs, substantially improving training efficiency. The method was evaluated on a retrospective cohort of 174 H&N patients treated with VMAT, using a temporal split for training (n = 137) and testing (n = 37).<br><b>Results</b> Compared with MAE- and DVH-based losses, the proposed CDM loss substantially improved clinical target coverage, and satisfied all predefined clinical constraints. Using a standard 3D U-Net, the PTV Score was reduced from 1.544 (MAE) to 0.491 (MAE+CDM), while consistently satisfying all PTV clinical constraints. OAR sparing remained comparable or improved. Bit-mask ROI encoding reduced average training epoch time from 241s to 43s (83.2% reduction) and lowered peak GPU memory usage. Notably, with the CDM loss, a standard 3D U-Net achieved performance comparable to or better than more complex state-of-the-art architectures.<br><b>Conclusion</b> Directly optimizing clinically used DVH metrics enables 3D dose predictions that are better aligned with clinical treatment planning criteria than conventional only voxel-wise or DVH-curve supervision. The proposed CDM loss, combined with efficient ROI bit-mask encoding, provides a practical and scalable framework for H&N dose prediction.},
+}
+
 @inproceedings{Ilicak:2026,
   abbr =    {},
   bibtex_show = {true},
