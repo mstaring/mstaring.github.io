@@ -3,6 +3,24 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{Rao:2026,
+  abbr =     {},
+  bibtex_show = {true},
+  author =   {Rao, Chinmay and van Osch, Matthias and Pezzotti, Nicola and de Bresser, Jeroen and van Buchem, Mark and Beljaards, Laurens and Meineke, Jakob and de Weerdt, Elwin and Lu, Huangling and Doneva, Mariya and Staring, Marius},
+  title =    {A plug-and-play method for guided multi-contrast MRI reconstruction based on content/style modeling},
+  journal =  {Medical Image Analysis},
+  volume =   {113},
+  number =   {},
+  pages =    {104160},
+  month =    {September},
+  year =     {2026},
+  pdf =      {2026_j_MedIA.pdf},
+  html =     {https://doi.org/10.1016/j.media.2026.104160},
+  arxiv =    {},
+  code =     {https://github.com/cnmy-ro/pnp-cosmo},
+  abstract = {Since the various contrast-weighted MR images of a given anatomy contain redundant information, one contrast can be used to guide the reconstruction of another undersampled contrast acquired subsequently in the same session. To solve this reconstruction problem leveraging multi-contrast side information, several end-to-end learning-based guided reconstruction methods have been proposed. However, a key challenge is the requirement for large paired training datasets comprising raw k-space data and aligned reference images. We propose a modular plug-and-play approach, which requires no k-space training data and relies solely on partially paired image-domain datasets. In this approach, a content/style model of two-contrast MR data is first learned from a purely image-domain dataset and subsequently applied as a plug-and-play operator in iterative reconstruction. The disentanglement of content and style allows explicit representation of contrast-independent and contrast-specific factors. Consequently, incorporating prior information into the reconstruction reduces to a simple replacement operation on the aliased content of the estimated image using high-quality content derived from the reference scan. Combining this so-called content consistency operation with an MR data consistency step, followed by a corrective procedure for the content estimate, yields an iterative scheme. We name this novel approach PnP-CoSMo. This approach, by design, offers cross-contrast generalizability and provides an explanatory framework based on the shared and non-shared generative factors underlying the two given contrasts. We explore various aspects of PnP-CoSMo, including interpretability and convergence, via simulations. Furthermore, its practicality is demonstrated on the public NYU fastMRI DICOM dataset, showing equivalent or superior quality and greater generalizability compared to end-to-end methods. On two in-house multi-coil datasets, PnP-CoSMo enabled up to 32.6% greater acceleration over non-guided plug-and-play reconstruction at given SSIM.},
+}
+
 @article{Prinse:2026,
   abbr =     {},
   bibtex_show = {true},
