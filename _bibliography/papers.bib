@@ -3,6 +3,57 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{Beljaards:2026,
+  abbr = {},
+  bibtex_show = {true},
+  title =   {Deep-Reorder: Refined Motion Correction for 3D Brain MRI via Iterative Data Regrouping},
+  author =  {Beljaards, Laurens and van Osch, Matthias J.P. and Nagtegaal, Martijn and Keupp, Jochen and Rao, Chinmay and Pezzotti, Nicola and Doneva, Mariya and Staring, Marius},
+  journal = {Magnetic Resonance in Medicine},
+  volume =  {},
+  pages =   {},
+  month =   {},
+  year =    {2026},
+  pdf =     {2026_j_MRM.pdf},
+  html =    {},
+  arxiv =   {},
+  code =    {},
+  abstract = {<b>Purpose:</b> Accurate and temporally high-resolution estimation of subject motion is paramount for effective motion-correction in MRI. This work proposes a novel approach for estimating subject motion within a 3D MRI scan with high temporal resolution.<br><b>Methods:</b> Starting from an incoherent sampling scheme, images are reconstructed from temporally ordered k-space fractions via deep learning, enabling motion estimation via registration between each image. Assuming the bulk of the motion is removed using these initial estimates, the remaining misalignment between k-space fractions is expected to be minimally correlated in time. Based on this insight, an iterative strategy is proposed in which shots are arbitrarily regrouped into new k-space fractions, regardless of their original temporal ordering, for subsequent motion estimation and correction. This effectively increases the temporal resolution of the approach, enabling individual correction of all shots.<br><b>Results:</b> When applied to 3D T1w TFE MRI of the brain, the proposed approach ``Deep-Reorder'' estimated a unique motion state for all shots, producing significantly better estimations of retrospective motion compared to estimation without iterative data regrouping. On prospectively motion-corrupted scans with intentional head movement by volunteers, the proposed approach consistently improved image quality, producing less noisy images with reduced motion artifacts.<br><b>Conclusion:</b> In conclusion, the proposed approach, which is free of external tracking devices or navigators, effectively estimated 3D motion and corrected motion artifacts with increased temporal resolution.}
+}
+
+@article{Mody:2026,
+  abbr = {},
+  bibtex_show = {true},
+  title =   {Manual Brush vs Artificial Intelligence Pencil: Evaluating tools for auto-contour refinement of head-and-neck tumors on Positron Emission Tomography and Computed Tomography scans},
+  author =  {Mody, Prerak and Chaves-de-Plaza, Nicolas and Gooding, Mark and De Jong, Martin and De Ridder, Mischa, and Den Haan, Niels and Elbers, Jos and Hildebrandt, Klaus and Staring, Marius},
+  journal = {Physics and Imaging in Radiation Oncology},
+  volume =  {},
+  pages =   {},
+  month =   {},
+  year =    {2026},
+  pdf =     {2026_j_Phiro.pdf},
+  html =    {},
+  arxiv =   {},
+  code =    {},
+  abstract = {<b>Background and Purpose:</b> To resolve errors in auto-contours, clinicians currently use a manual brush tool. These are inefficient, especially for larger errors, where each incorrect pixel has to be rectified. An alternative is Artificial Intelligence (AI)-assisted contour refinement using visual cues such as pencil strokes (or scribbles) drawn within inaccurate regions. However, no comparison against the widely used manual brush exists, especially in a study with clinical users. Thus, the goal of this study was to compare the time-efficiency and contour quality of the manual brush against the AI pencil.<br><b>Materials and Methods:</b> A web-based interface and an AI pencil trained on 452 scans from the HECKTOR2022 dataset was designed to conduct auto-contour refinement sessions. Both tumor contouring experts (N = 4) and non-experts (N = 7) performed contour refinement with data from 6 patients. The AI pencil supports two-dimensional (2D) interactions (i.e., scribbles) to refine three-dimensional (3D) tumor contours on head-and-neck Computed Tomography + Positron Emission Tomography scans. The efficiency (time) and effectiveness (Dice / surface Dice @ 2 mm) of the manual brush and AI pencil were compared.<br><b>Results:</b> For tumor auto-contour refinement, the AI pencil was [5% - 78%] (median=258.5 s) faster across 42 non-expert sessions and [16% - 97%] (median=234 s) faster across 24 expert sessions. The average inter-observer variability (calculated by Dice / surface Dice @ 2 mm) across 6 patients was equivalent between the manual brush (0.89/0.90) and AI pencil (0.90/0.92) for the expert sessions.<br><b>Conclusions:</b> The AI pencil offers a promising alternative to traditional manual brushes in auto-contouring-based radiotherapy workflows. It improved the time efficiency while maintaining final contour quality for auto-contour refinement.}
+}
+
+@article{VanDerValk:2026,
+  abbr =     {},
+  bibtex_show = {true},
+  author =   {van der Valk, Viktor and Atsma, Douwe and Scherptong, Roderick and Staring, Marius},
+  title =    {Leveraging the wearable 1 lead ECG signal. From cardiac rhythm to cardiac function assessment},
+  journal =  {npj Cardiovascular Health},
+  volume =   {},
+  number =   {},
+  pages =    {},
+  year =     {2026},
+  pdf =      {2026_j_npjCH.pdf},
+  html =     {https://doi.org/10.1038/s44325-026-00153-2},
+  arxiv =    {},
+  code =     {},
+  abstract = {Traditional 12-lead ECGs offer comprehensive insights into the electrical activity of the heart, but require clinical settings and expert interpretation, which limits their accessibility. Smartwatch 1-lead ECGs can be recorded at home, allowing  more frequent and rapid monitoring, opening opportunities for early adverse event detection and enhanced patient autonomy. This study investigates whether 1-lead ECGs can provide clinically meaningful information beyond heart rhythm assessment. Using explainable deep learning models, we predict left ventricular function (LVF) from both 1-lead and 12-lead ECGs in a post-myocardial infarction population, and compare their respective performances. Our findings demonstrate that LVF can be accurately predicted from 1-lead ECGs alone (AUC = 0.883), nearly matching the predictive performance of 12-lead ECGs (AUC = 0.897). Explainability analyses further reveal that the models leverage physiologically plausible ECG features, supporting the validity of this approach. These results suggest that 1-lead ECGs, when combined with explainable AI, have the potential to support broader clinical applications and empower patients, particularly in resource-limited or remote settings where access to traditional cardiac diagnostics remains constrained.},
+}
+
 @article{Gao:2026,
   abbr =     {},
   bibtex_show = {true},
